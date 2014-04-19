@@ -19,6 +19,16 @@
 		4FAB3B7D19032EE100211885 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FAB3B6519032EE100211885 /* UIKit.framework */; };
 		4FAB3B8519032EE200211885 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4FAB3B8319032EE200211885 /* InfoPlist.strings */; };
 		4FAB3B8719032EE200211885 /* SaturdayAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAB3B8619032EE200211885 /* SaturdayAppTests.m */; };
+		7340C285190333C7002D4EC2 /* EBSelfieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C283190333C7002D4EC2 /* EBSelfieViewController.m */; };
+		7340C286190333C7002D4EC2 /* EBSelfieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C284190333C7002D4EC2 /* EBSelfieViewController.xib */; };
+		7340C28A190333DA002D4EC2 /* EBNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C288190333DA002D4EC2 /* EBNameViewController.m */; };
+		7340C28B190333DA002D4EC2 /* EBNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C289190333DA002D4EC2 /* EBNameViewController.xib */; };
+		7340C28F19033403002D4EC2 /* EBMainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C28D19033403002D4EC2 /* EBMainListViewController.m */; };
+		7340C29019033403002D4EC2 /* EBMainListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C28E19033403002D4EC2 /* EBMainListViewController.xib */; };
+		7340C29419033417002D4EC2 /* EBCreateBroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C29219033417002D4EC2 /* EBCreateBroadcastViewController.m */; };
+		7340C29519033417002D4EC2 /* EBCreateBroadcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C29319033417002D4EC2 /* EBCreateBroadcastViewController.xib */; };
+		7340C2991903342A002D4EC2 /* EBBroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C2971903342A002D4EC2 /* EBBroadcastViewController.m */; };
+		7340C29A1903342A002D4EC2 /* EBBroadcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C2981903342A002D4EC2 /* EBBroadcastViewController.xib */; };
 		99BC02A9DD334E23A85AA06F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1A9950621546A2A346186B /* libPods.a */; };
 		ADD577CF190332E20090AE33 /* EBLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD577CD190332E20090AE33 /* EBLocationViewController.m */; };
 		ADD577D0190332E20090AE33 /* EBLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD577CE190332E20090AE33 /* EBLocationViewController.xib */; };
@@ -53,6 +63,21 @@
 		4FAB3B8619032EE200211885 /* SaturdayAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SaturdayAppTests.m; sourceTree = "<group>"; };
 		5C1A9950621546A2A346186B /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		6ACD8AE7AA714A02BBB36B05 /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		7340C282190333C7002D4EC2 /* EBSelfieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSelfieViewController.h; sourceTree = "<group>"; };
+		7340C283190333C7002D4EC2 /* EBSelfieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSelfieViewController.m; sourceTree = "<group>"; };
+		7340C284190333C7002D4EC2 /* EBSelfieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBSelfieViewController.xib; sourceTree = "<group>"; };
+		7340C287190333DA002D4EC2 /* EBNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNameViewController.h; sourceTree = "<group>"; };
+		7340C288190333DA002D4EC2 /* EBNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNameViewController.m; sourceTree = "<group>"; };
+		7340C289190333DA002D4EC2 /* EBNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBNameViewController.xib; sourceTree = "<group>"; };
+		7340C28C19033403002D4EC2 /* EBMainListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBMainListViewController.h; sourceTree = "<group>"; };
+		7340C28D19033403002D4EC2 /* EBMainListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBMainListViewController.m; sourceTree = "<group>"; };
+		7340C28E19033403002D4EC2 /* EBMainListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBMainListViewController.xib; sourceTree = "<group>"; };
+		7340C29119033417002D4EC2 /* EBCreateBroadcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBCreateBroadcastViewController.h; sourceTree = "<group>"; };
+		7340C29219033417002D4EC2 /* EBCreateBroadcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBCreateBroadcastViewController.m; sourceTree = "<group>"; };
+		7340C29319033417002D4EC2 /* EBCreateBroadcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBCreateBroadcastViewController.xib; sourceTree = "<group>"; };
+		7340C2961903342A002D4EC2 /* EBBroadcastViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBBroadcastViewController.h; sourceTree = "<group>"; };
+		7340C2971903342A002D4EC2 /* EBBroadcastViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBBroadcastViewController.m; sourceTree = "<group>"; };
+		7340C2981903342A002D4EC2 /* EBBroadcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBBroadcastViewController.xib; sourceTree = "<group>"; };
 		ADD577CC190332E20090AE33 /* EBLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBLocationViewController.h; sourceTree = "<group>"; };
 		ADD577CD190332E20090AE33 /* EBLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBLocationViewController.m; sourceTree = "<group>"; };
 		ADD577CE190332E20090AE33 /* EBLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBLocationViewController.xib; sourceTree = "<group>"; };
@@ -125,6 +150,21 @@
 				ADD577CC190332E20090AE33 /* EBLocationViewController.h */,
 				ADD577CD190332E20090AE33 /* EBLocationViewController.m */,
 				ADD577CE190332E20090AE33 /* EBLocationViewController.xib */,
+				7340C282190333C7002D4EC2 /* EBSelfieViewController.h */,
+				7340C283190333C7002D4EC2 /* EBSelfieViewController.m */,
+				7340C284190333C7002D4EC2 /* EBSelfieViewController.xib */,
+				7340C287190333DA002D4EC2 /* EBNameViewController.h */,
+				7340C288190333DA002D4EC2 /* EBNameViewController.m */,
+				7340C289190333DA002D4EC2 /* EBNameViewController.xib */,
+				7340C28C19033403002D4EC2 /* EBMainListViewController.h */,
+				7340C28D19033403002D4EC2 /* EBMainListViewController.m */,
+				7340C28E19033403002D4EC2 /* EBMainListViewController.xib */,
+				7340C29119033417002D4EC2 /* EBCreateBroadcastViewController.h */,
+				7340C29219033417002D4EC2 /* EBCreateBroadcastViewController.m */,
+				7340C29319033417002D4EC2 /* EBCreateBroadcastViewController.xib */,
+				7340C2961903342A002D4EC2 /* EBBroadcastViewController.h */,
+				7340C2971903342A002D4EC2 /* EBBroadcastViewController.m */,
+				7340C2981903342A002D4EC2 /* EBBroadcastViewController.xib */,
 			);
 			path = SaturdayApp;
 			sourceTree = "<group>";
@@ -237,8 +277,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FAB3B6C19032EE100211885 /* InfoPlist.strings in Resources */,
+				7340C28B190333DA002D4EC2 /* EBNameViewController.xib in Resources */,
+				7340C286190333C7002D4EC2 /* EBSelfieViewController.xib in Resources */,
+				7340C29519033417002D4EC2 /* EBCreateBroadcastViewController.xib in Resources */,
 				4FAB3B7419032EE100211885 /* Images.xcassets in Resources */,
+				7340C29019033403002D4EC2 /* EBMainListViewController.xib in Resources */,
 				ADD577D0190332E20090AE33 /* EBLocationViewController.xib in Resources */,
+				7340C29A1903342A002D4EC2 /* EBBroadcastViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -290,9 +335,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7340C28A190333DA002D4EC2 /* EBNameViewController.m in Sources */,
 				4FAB3B6E19032EE100211885 /* main.m in Sources */,
+				7340C29419033417002D4EC2 /* EBCreateBroadcastViewController.m in Sources */,
+				7340C28F19033403002D4EC2 /* EBMainListViewController.m in Sources */,
+				7340C285190333C7002D4EC2 /* EBSelfieViewController.m in Sources */,
 				4FAB3B7219032EE100211885 /* EBAppDelegate.m in Sources */,
 				ADD577CF190332E20090AE33 /* EBLocationViewController.m in Sources */,
+				7340C2991903342A002D4EC2 /* EBBroadcastViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
