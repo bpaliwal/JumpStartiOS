@@ -11,13 +11,18 @@
 
 @implementation EBAppDelegate
 
+
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
     
+    self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     EBLocationViewController *locationViewController = [[EBLocationViewController alloc] init];
-    self.window.rootViewController = locationViewController;
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:locationViewController];
+    
+    self.window.rootViewController = navigationController;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
