@@ -8,6 +8,8 @@
 
 #import "EBAppDelegate.h"
 #import "EBLocationViewController.h"
+//debugging import
+#import "EBSelfieViewController.h"
 
 @implementation EBAppDelegate
 
@@ -22,7 +24,13 @@
     EBLocationViewController *locationViewController = [[EBLocationViewController alloc] init];
     UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:locationViewController];
     
+    //Normal rootviewcontroller
     self.window.rootViewController = navigationController;
+    [navigationController setNavigationBarHidden:YES];
+    
+    //Debugging rootviewcontroller
+    //EBSelfieViewController *selfieView = [[EBSelfieViewController alloc] init];
+    //self.window.rootViewController = selfieView;
     
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];

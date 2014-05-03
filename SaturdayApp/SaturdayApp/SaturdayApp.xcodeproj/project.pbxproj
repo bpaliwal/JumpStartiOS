@@ -31,6 +31,13 @@
 		7340C29A1903342A002D4EC2 /* EBBroadcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C2981903342A002D4EC2 /* EBBroadcastViewController.xib */; };
 		73981FDB1912EDFA0062088B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73981FDA1912EDFA0062088B /* MapKit.framework */; };
 		73A4599F191329F500607F25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A4599E191329F500607F25 /* CoreLocation.framework */; };
+		73DC3B2119157FB400B0DC5C /* selfie1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B1B19157FB400B0DC5C /* selfie1.jpg */; };
+		73DC3B2219157FB400B0DC5C /* selfie2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B1C19157FB400B0DC5C /* selfie2.jpg */; };
+		73DC3B2319157FB400B0DC5C /* selfie3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B1D19157FB400B0DC5C /* selfie3.jpg */; };
+		73DC3B2419157FB400B0DC5C /* selfie4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B1E19157FB400B0DC5C /* selfie4.jpg */; };
+		73DC3B2519157FB400B0DC5C /* selfie5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B1F19157FB400B0DC5C /* selfie5.jpg */; };
+		73DC3B2619157FB400B0DC5C /* selfie6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B2019157FB400B0DC5C /* selfie6.jpg */; };
+		73DC3B29191583AE00B0DC5C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DC3B28191583AE00B0DC5C /* QuartzCore.framework */; };
 		99BC02A9DD334E23A85AA06F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1A9950621546A2A346186B /* libPods.a */; };
 		ADD577CF190332E20090AE33 /* EBLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD577CD190332E20090AE33 /* EBLocationViewController.m */; };
 		ADD577D0190332E20090AE33 /* EBLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD577CE190332E20090AE33 /* EBLocationViewController.xib */; };
@@ -82,6 +89,13 @@
 		7340C2981903342A002D4EC2 /* EBBroadcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBBroadcastViewController.xib; sourceTree = "<group>"; };
 		73981FDA1912EDFA0062088B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		73A4599E191329F500607F25 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		73DC3B1B19157FB400B0DC5C /* selfie1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie1.jpg; sourceTree = "<group>"; };
+		73DC3B1C19157FB400B0DC5C /* selfie2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie2.jpg; sourceTree = "<group>"; };
+		73DC3B1D19157FB400B0DC5C /* selfie3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie3.jpg; sourceTree = "<group>"; };
+		73DC3B1E19157FB400B0DC5C /* selfie4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie4.jpg; sourceTree = "<group>"; };
+		73DC3B1F19157FB400B0DC5C /* selfie5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie5.jpg; sourceTree = "<group>"; };
+		73DC3B2019157FB400B0DC5C /* selfie6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie6.jpg; sourceTree = "<group>"; };
+		73DC3B28191583AE00B0DC5C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
 		ADD577CC190332E20090AE33 /* EBLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBLocationViewController.h; sourceTree = "<group>"; };
 		ADD577CD190332E20090AE33 /* EBLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBLocationViewController.m; sourceTree = "<group>"; };
 		ADD577CE190332E20090AE33 /* EBLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBLocationViewController.xib; sourceTree = "<group>"; };
@@ -92,6 +106,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				73DC3B29191583AE00B0DC5C /* QuartzCore.framework in Frameworks */,
 				73A4599F191329F500607F25 /* CoreLocation.framework in Frameworks */,
 				73981FDB1912EDFA0062088B /* MapKit.framework in Frameworks */,
 				4FAB3B6419032EE100211885 /* CoreGraphics.framework in Frameworks */,
@@ -137,6 +152,7 @@
 		4FAB3B6019032EE100211885 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				73DC3B28191583AE00B0DC5C /* QuartzCore.framework */,
 				73A4599E191329F500607F25 /* CoreLocation.framework */,
 				73981FDA1912EDFA0062088B /* MapKit.framework */,
 				4FAB3B6119032EE100211885 /* Foundation.framework */,
@@ -151,6 +167,7 @@
 		4FAB3B6719032EE100211885 /* SaturdayApp */ = {
 			isa = PBXGroup;
 			children = (
+				73DC3B2719157FC900B0DC5C /* Selfies */,
 				4FAB3B7019032EE100211885 /* EBAppDelegate.h */,
 				4FAB3B7119032EE100211885 /* EBAppDelegate.m */,
 				4FAB3B7319032EE100211885 /* Images.xcassets */,
@@ -204,6 +221,19 @@
 				4FAB3B8319032EE200211885 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		73DC3B2719157FC900B0DC5C /* Selfies */ = {
+			isa = PBXGroup;
+			children = (
+				73DC3B1B19157FB400B0DC5C /* selfie1.jpg */,
+				73DC3B1C19157FB400B0DC5C /* selfie2.jpg */,
+				73DC3B1D19157FB400B0DC5C /* selfie3.jpg */,
+				73DC3B1E19157FB400B0DC5C /* selfie4.jpg */,
+				73DC3B1F19157FB400B0DC5C /* selfie5.jpg */,
+				73DC3B2019157FB400B0DC5C /* selfie6.jpg */,
+			);
+			name = Selfies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -286,12 +316,18 @@
 			files = (
 				4FAB3B6C19032EE100211885 /* InfoPlist.strings in Resources */,
 				7340C28B190333DA002D4EC2 /* EBNameViewController.xib in Resources */,
+				73DC3B2219157FB400B0DC5C /* selfie2.jpg in Resources */,
 				7340C286190333C7002D4EC2 /* EBSelfieViewController.xib in Resources */,
 				7340C29519033417002D4EC2 /* EBCreateBroadcastViewController.xib in Resources */,
+				73DC3B2519157FB400B0DC5C /* selfie5.jpg in Resources */,
 				4FAB3B7419032EE100211885 /* Images.xcassets in Resources */,
 				7340C29019033403002D4EC2 /* EBMainListViewController.xib in Resources */,
+				73DC3B2619157FB400B0DC5C /* selfie6.jpg in Resources */,
 				ADD577D0190332E20090AE33 /* EBLocationViewController.xib in Resources */,
+				73DC3B2119157FB400B0DC5C /* selfie1.jpg in Resources */,
 				7340C29A1903342A002D4EC2 /* EBBroadcastViewController.xib in Resources */,
+				73DC3B2419157FB400B0DC5C /* selfie4.jpg in Resources */,
+				73DC3B2319157FB400B0DC5C /* selfie3.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

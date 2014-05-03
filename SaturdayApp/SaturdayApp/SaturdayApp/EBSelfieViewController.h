@@ -8,6 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@interface EBSelfieViewController : UIViewController
+@interface EBSelfieViewController : UIViewController <UINavigationControllerDelegate,
+UIImagePickerControllerDelegate>
+
 
 @end
