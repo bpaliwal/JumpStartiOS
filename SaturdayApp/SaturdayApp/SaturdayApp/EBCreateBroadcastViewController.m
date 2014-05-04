@@ -9,6 +9,12 @@
 #import "EBCreateBroadcastViewController.h"
 
 @interface EBCreateBroadcastViewController ()
+@property (weak, nonatomic) IBOutlet UITextView *createBroadcastText;
+- (IBAction)cancelBroadcast:(id)sender;
+- (IBAction)publishBroadcastButton:(id)sender;
+
+@property (weak, nonatomic) IBOutlet UITextField *tagsText;
+
 
 @end
 
@@ -35,4 +41,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)cancelBroadcast:(id)sender {
+}
+
+- (IBAction)publishBroadcastButton:(id)sender {
+}
 @end
