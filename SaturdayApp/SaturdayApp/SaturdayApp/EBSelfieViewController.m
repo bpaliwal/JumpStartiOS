@@ -9,6 +9,7 @@
 #import "EBSelfieViewController.h"
 #import "EBNameViewController.h"
 #import <QuartzCore/QuartzCore.h>
+#import <MobileCoreServices/MobileCoreServices.h>
 
 //#import "selfie1.jpg"
 
@@ -99,6 +100,50 @@
     } else {
         NSLog(@"Counting is not working");
     }
-
 }
+
+// For responding to the user accepting a newly-captured picture or movie
+- (void) imagePickerController: (UIImagePickerController *) picker didFinishPickingMediaWithInfo: (NSDictionary *) info {
+    
+    NSString *mediaType = [info objectForKey: UIImagePickerControllerMediaType];
+    UIImage *originalImage, *editedImage, *imageToSave;
+    
+    // Handle a still image capture
+    if (CFStringCompare ((CFStringRef) mediaType, kUTTypeImage, 0) == kCFCompareEqualTo) {
+        
+        editedImage = (UIImage *) [info objectForKey: UIImagePickerControllerEditedImage];
+        originalImage = (UIImage *) [info objectForKey: UIImagePickerControllerOriginalImage];
+        
+        if (editedImage) {
+            imageToSave = editedImage;
+        } else {
+            imageToSave = originalImage;
+        }
+        
+        // Save the new image (original or edited) to the Camera Roll
+        //UIImageWriteToSavedPhotosAlbum (imageToSave, nil, nil , nil);
+        //UIImage *image = [pickerController valueForKey:UIImagePickerControllerOriginalImage];
+        //NSString  *imagePath = [NSHomeDirectory() stringByAppendingPathComponent:[NSString stringWithFormat:@"Documents/chosenSelfie.jpg"]];
+        NSString  *imagePath = [NSHomeDirectory() stringByAppendingPathComponent:@"Documents/chosenSelfie.jpg"];
+        [UIImageJPEGRepresentation(imageToSave, 1.0) writeToFile:imagePath atomically:YES];
+    }
+    
+    // Handle a movie capture
+    if (CFStringCompare ((CFStringRef) mediaType, kUTTypeMovie, 0) == kCFCompareEqualTo) {
+        NSLog(@"You chose a movie. Sorry, we're not that cool yet");
+        //NSString *moviePath = [[info objectForKey: UIImagePickerControllerMediaURL] path];
+        //if (UIVideoAtPathIsCompatibleWithSavedPhotosAlbum (moviePath)) {
+            //UISaveVideoAtPathToSavedPhotosAlbum (
+              //                                   moviePath, nil, nil, nil);
+        //}
+    }
+    
+    [_selfieChangeImageTimer invalidate];
+    
+    //I absolutely cannot figure out why this line is not working!!!!
+    [_selfieImageView setImage:[UIImage imageNamed:[NSHomeDirectory() stringByAppendingPathComponent:@"Documents/chosenSelfie.jpg"]]];
+    
+    [picker dismissViewControllerAnimated:YES completion:NULL];
+}
+
 @end
