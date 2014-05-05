@@ -10,6 +10,8 @@
 #import "EBLocationViewController.h"
 //debugging import
 #import "EBSelfieViewController.h"
+//adding Parse
+#import <Parse/Parse.h>
 
 @implementation EBAppDelegate
 
@@ -19,6 +21,10 @@
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     // Override point for customization after application launch.
+    
+    //SS:Intializing Parse
+    [Parse setApplicationId:@"x29ceQ9ro2nNJlLVTLjEnR8Xm05pptmwNLWBPStu" clientKey:@"i95R8EMSN56LNh02E7fr1jzmX7rw8o7iPCNseAMU"];
+    
     
     self.window = [[UIWindow alloc] initWithFrame: [[UIScreen mainScreen] bounds]];
     EBLocationViewController *locationViewController = [[EBLocationViewController alloc] init];
