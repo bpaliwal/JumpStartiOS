@@ -1,37 +1,25 @@
 //
 //  EBNameViewController.m
-//  SaturdayApp
+//  
 //
-//  Created by Jeffrey Bergier on 4/19/14.
-//  Copyright (c) 2014 BharatJeffSimer. All rights reserved.
+//  Created by michael on 5/4/14.
+//
 //
 
 #import "EBNameViewController.h"
 #import <Parse/Parse.h>
-#import "EBLocationViewController.h"
+#import "EBMainListViewController.h"
+#import "EBCreateBroadcastViewController.h"
 
 @interface EBNameViewController ()
-
-//SS: Track input changed
-- (void)textInputChanged:(NSNotification *)note;
-- (BOOL)shouldEnableViewBroadcastButton;
-- (void)processUserInformation;
-
-
-
+@property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
+@property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+- (IBAction)signUpAndViewBroadcastButton:(id)sender;
+@property (weak, nonatomic) IBOutlet UITextField *emailTextField;
 
 @end
 
 @implementation EBNameViewController
-
-// SS: specify synthesis, since custom getters are used in the if field in shouldEnable function below.
-@synthesize viewBroadcastButton;
-@synthesize userNameField;
-
-
-
-
-
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -46,13 +34,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    //SS: enter user name and enable view broadcast button
-    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textInputChanged:) name:UITextFieldTextDidChangeNotification object:userNameField];
-    
-    
-    
-    
-    
 }
 
 - (void)didReceiveMemoryWarning
@@ -61,36 +42,40 @@
     // Dispose of any resources that can be recreated.
 }
 
-
-// SS: track text change
-- (void)textInputChanged:(NSNotification *)note{
-    viewBroadcastButton.enabled=[self shouldEnableViewBroadcastButton];
+- (IBAction)signUpAndViewBroadcastButton:(id)sender {
+    
+    PFUser *user = [PFUser user];
+    
+    user.username=self.userNameTextField.text;
+    user.password = self.passwordTextField.text;
+    user.email = self.emailTextField.text;
+    
+    // other fields can be set just like with PFObject
+    //user[@"phone"] = @"415-392-0202";
+    
+    [user signUpInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        if (!error) {
+            // Hooray! Let them use the app now.
+            NSLog(@"User Signed Up");
+           /* disabled temporarly
+            EBMainListViewController *mainListViewController = [[EBMainListViewController alloc] init];
+            [self.navigationController pushViewController:mainListViewController animated:YES];
+            */
+            // need to disabled eventually
+            EBCreateBroadcastViewController *createBroadcastViewController = [[EBCreateBroadcastViewController alloc] init];
+            [self.navigationController pushViewController:createBroadcastViewController animated:YES];
+            
+            
+        } else {
+            NSString *errorString = [error userInfo][@"error"];
+            NSLog(@"%@",errorString);
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:[[error userInfo] objectForKey:@"error"] message:nil delegate:self cancelButtonTitle:nil otherButtonTitles:@"Ok", nil];
+            [alertView show];
+            
+            // Show the errorString somewhere and let the user try again.
+        }
+    }];
+    
+    
 }
-
-
-//SS: Enable View Broadcast
-
-- (BOOL)shouldEnableViewBroadcastButton {
-    BOOL enableViewBroadcastButton = NO;
-    if (userNameField.text !=nil &&
-        userNameField.text.length > 0){
-        enableViewBroadcastButton = YES;
-    }
-    return enableViewBroadcastButton;
-}
-    
-
-- (void)processUserInformation
-    {
-        NSString *username=userNameField.text;
-        
-    }
-
-    
-
-    
-    
-- (IBAction)viewBroadcast:(id)sender {
-  [self processUserInformation];
-    }
 @end

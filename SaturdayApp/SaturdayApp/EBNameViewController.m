@@ -1,22 +1,18 @@
 //
-//  EBCreateBroadcastViewController.m
-//  SaturdayApp
+//  EBNameViewController.m
+//  
 //
-//  Created by Jeffrey Bergier on 4/19/14.
-//  Copyright (c) 2014 BharatJeffSimer. All rights reserved.
+//  Created by michael on 5/4/14.
+//
 //
 
-#import "EBCreateBroadcastViewController.h"
+#import "EBNameViewController.h"
 
-@interface EBCreateBroadcastViewController ()
-@property (weak, nonatomic) IBOutlet UITextView *createBroadcastText;
-
-@property (weak, nonatomic) IBOutlet UITextField *tagsText;
-
+@interface EBNameViewController ()
 
 @end
 
-@implementation EBCreateBroadcastViewController
+@implementation EBNameViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -38,7 +34,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
-
 
 @end
