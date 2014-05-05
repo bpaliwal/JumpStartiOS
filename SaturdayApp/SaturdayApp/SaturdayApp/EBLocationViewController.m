@@ -67,7 +67,7 @@
 - (IBAction)startTracking:(id)sender {
 
     if ([[_locationGrantPermissionButton currentTitle] isEqual:@"Continue to Next Step"]) {
-        NSLog(@"Location Permission Granted");
+        //NSLog(@"Location Permission Granted");
         [_lm stopUpdatingLocation];
         EBSelfieViewController *selfieView = [[EBSelfieViewController alloc] init];
         [self.navigationController pushViewController:selfieView animated:YES];
@@ -89,7 +89,7 @@
                          }
                          completion:^(BOOL fin) {
                              if (fin) {
-                                 NSLog(@"Text Change Finished Animating");
+                                 //NSLog(@"Text Change Finished Animating");
                                  [self changeButtonText];
                              }
                         }

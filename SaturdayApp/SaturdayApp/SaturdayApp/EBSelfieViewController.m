@@ -83,7 +83,7 @@
 
 - (IBAction)didTakePicture:(id)sender {
     if ([[_selfieTakePictureButton currentTitle] isEqual:@"Continue to Next Step"]) {
-        NSLog(@"Continuing to next step");
+        //NSLog(@"Continuing to next step");
         [_selfieChangeImageTimer invalidate];
         EBNameViewController *nameViewController = [[EBNameViewController alloc] init];
         [self.navigationController pushViewController:nameViewController animated:YES];
@@ -98,7 +98,7 @@
 }
 
 - (IBAction)didChoosePicture:(id)sender {
-    NSLog(@"Choosing Picture from Library");
+    //NSLog(@"Choosing Picture from Library");
     UIImagePickerController *pickerController = [[UIImagePickerController alloc] init];
     pickerController.delegate = self;
     pickerController.sourceType = UIImagePickerControllerSourceTypePhotoLibrary;
@@ -106,7 +106,7 @@
 }
 
 - (IBAction)didSkipPicture:(id)sender {
-    NSLog(@"Skipping Selfie");
+    //NSLog(@"Skipping Selfie");
     EBNameViewController *nameViewController = [[EBNameViewController alloc] init];
     [self.navigationController pushViewController:nameViewController animated:YES];
     [_selfieChangeImageTimer invalidate];
