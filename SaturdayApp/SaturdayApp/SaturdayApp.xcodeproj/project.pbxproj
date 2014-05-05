@@ -31,7 +31,6 @@
 		7340C29A1903342A002D4EC2 /* EBBroadcastViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C2981903342A002D4EC2 /* EBBroadcastViewController.xib */; };
 		73981FDB1912EDFA0062088B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73981FDA1912EDFA0062088B /* MapKit.framework */; };
 		73A4599F191329F500607F25 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73A4599E191329F500607F25 /* CoreLocation.framework */; };
-		73D5891A1916DBB800043F3E /* JCRBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = 73D589191916DBB800043F3E /* JCRBlurView.m */; };
 		73DC3B2119157FB400B0DC5C /* selfie1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B1B19157FB400B0DC5C /* selfie1.jpg */; };
 		73DC3B2219157FB400B0DC5C /* selfie2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B1C19157FB400B0DC5C /* selfie2.jpg */; };
 		73DC3B2319157FB400B0DC5C /* selfie3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B1D19157FB400B0DC5C /* selfie3.jpg */; };
@@ -90,8 +89,6 @@
 		7340C2981903342A002D4EC2 /* EBBroadcastViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBBroadcastViewController.xib; sourceTree = "<group>"; };
 		73981FDA1912EDFA0062088B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		73A4599E191329F500607F25 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
-		73D589181916DBB800043F3E /* JCRBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCRBlurView.h; sourceTree = "<group>"; };
-		73D589191916DBB800043F3E /* JCRBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCRBlurView.m; sourceTree = "<group>"; };
 		73DC3B1B19157FB400B0DC5C /* selfie1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie1.jpg; sourceTree = "<group>"; };
 		73DC3B1C19157FB400B0DC5C /* selfie2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie2.jpg; sourceTree = "<group>"; };
 		73DC3B1D19157FB400B0DC5C /* selfie3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie3.jpg; sourceTree = "<group>"; };
@@ -170,7 +167,6 @@
 		4FAB3B6719032EE100211885 /* SaturdayApp */ = {
 			isa = PBXGroup;
 			children = (
-				73D589171916DBA400043F3E /* Blur */,
 				73DC3B2719157FC900B0DC5C /* Selfies */,
 				4FAB3B7019032EE100211885 /* EBAppDelegate.h */,
 				4FAB3B7119032EE100211885 /* EBAppDelegate.m */,
@@ -225,15 +221,6 @@
 				4FAB3B8319032EE200211885 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		73D589171916DBA400043F3E /* Blur */ = {
-			isa = PBXGroup;
-			children = (
-				73D589181916DBB800043F3E /* JCRBlurView.h */,
-				73D589191916DBB800043F3E /* JCRBlurView.m */,
-			);
-			name = Blur;
 			sourceTree = "<group>";
 		};
 		73DC3B2719157FC900B0DC5C /* Selfies */ = {
@@ -394,7 +381,6 @@
 			files = (
 				7340C28A190333DA002D4EC2 /* EBNameViewController.m in Sources */,
 				4FAB3B6E19032EE100211885 /* main.m in Sources */,
-				73D5891A1916DBB800043F3E /* JCRBlurView.m in Sources */,
 				7340C29419033417002D4EC2 /* EBCreateBroadcastViewController.m in Sources */,
 				7340C28F19033403002D4EC2 /* EBMainListViewController.m in Sources */,
 				7340C285190333C7002D4EC2 /* EBSelfieViewController.m in Sources */,

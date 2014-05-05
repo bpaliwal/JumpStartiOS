@@ -8,14 +8,11 @@
 
 #import "EBLocationViewController.h"
 #import "EBSelfieViewController.h"
-#import "JCRBlurView.h"
-
 
 @interface EBLocationViewController ()
 
 @property (strong, nonatomic) CLLocationManager *lm;
 @property (strong, nonatomic) NSMutableArray *trackPointArray;
-@property (strong, nonatomic) IBOutlet UIView *locationTextView;
 @property (weak, nonatomic) IBOutlet UILabel *locationWelcomeText;
 @property (weak, nonatomic) IBOutlet UIButton *locationGrantPermissionButton;
 @property (weak, nonatomic) IBOutlet MKMapView *mapview;
@@ -43,19 +40,6 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
-    
-    //Getting the screen height so it can be used to place items
-    CGRect screenBounds = [[UIScreen mainScreen] bounds];
-    
-    //Adding the Blur View to the screen
-    JCRBlurView *blurView = [JCRBlurView new];
-    [blurView setFrame:CGRectMake(0.0f, screenBounds.size.height-140.0f, 320.0f,140.0f)];
-    [self.view addSubview:blurView];
-    [blurView setBlurTintColor:nil];
-    
-    //Adding the buttons on top of the blur view
-    [_locationTextView setFrame:CGRectMake(0.0f,428.0f,320.0f,140.0f)];
-    [self.view addSubview:_locationTextView];
 }
 
 - (void)didReceiveMemoryWarning
@@ -67,7 +51,7 @@
 - (IBAction)startTracking:(id)sender {
 
     if ([[_locationGrantPermissionButton currentTitle] isEqual:@"Continue to Next Step"]) {
-        //NSLog(@"Location Permission Granted");
+        NSLog(@"Location Permission Granted");
         [_lm stopUpdatingLocation];
         EBSelfieViewController *selfieView = [[EBSelfieViewController alloc] init];
         [self.navigationController pushViewController:selfieView animated:YES];
@@ -89,7 +73,7 @@
                          }
                          completion:^(BOOL fin) {
                              if (fin) {
-                                 //NSLog(@"Text Change Finished Animating");
+                                 NSLog(@"Text Change Finished Animating");
                                  [self changeButtonText];
                              }
                         }
