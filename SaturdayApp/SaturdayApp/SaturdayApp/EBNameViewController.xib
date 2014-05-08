@@ -6,10 +6,10 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="EBNameViewController">
             <connections>
-                <outlet property="emailTextField" destination="sYC-ut-hid" id="dPU-kd-3I6"/>
-                <outlet property="passwordTextField" destination="J0a-pc-C0o" id="tBQ-nc-hH9"/>
-                <outlet property="userNameTextField" destination="QLd-3b-4eG" id="YSN-ju-vo3"/>
+                <outlet property="userNameField" destination="vG6-WI-Zea" id="n98-18-gFY"/>
+                <outlet property="userNameText" destination="vG6-WI-Zea" id="DR6-j3-pHG"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="viewBroadcastButton" destination="YH4-Fd-IRH" id="CsG-c5-HKA"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -17,45 +17,33 @@
             <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="username*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="QLd-3b-4eG">
-                    <rect key="frame" x="82" y="39" width="154" height="30"/>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vG6-WI-Zea">
+                    <rect key="frame" x="77" y="91" width="166" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                     <textInputTraits key="textInputTraits"/>
                 </textField>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="J0a-pc-C0o">
-                    <rect key="frame" x="82" y="127" width="154" height="30"/>
+                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Let the world know your name!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="268" translatesAutoresizingMaskIntoConstraints="NO" id="Rly-LF-D9E">
+                    <rect key="frame" x="32" y="47" width="268" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits" keyboardAppearance="alert" secureTextEntry="YES"/>
-                </textField>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kzC-Un-0XY">
-                    <rect key="frame" x="57" y="175" width="207" height="30"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YH4-Fd-IRH">
+                    <rect key="frame" x="103" y="138" width="114" height="30"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <state key="normal" title="Sign up and view broadcasts !">
+                    <state key="normal" title="View broadcasts">
                         <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                     </state>
                     <connections>
-                        <action selector="signUpAndViewBroadcastButton:" destination="-1" eventType="touchUpInside" id="heu-f7-qg7"/>
+                        <action selector="viewBroadcast:" destination="-1" eventType="touchUpInside" id="Jrs-f7-fX1"/>
+                        <action selector="viewBroadcastButton:" destination="-1" eventType="touchUpInside" id="K7B-RH-oyw"/>
                     </connections>
                 </button>
-                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="On_the_Air.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="H17-O5-KHf">
-                    <rect key="frame" x="11" y="220" width="301" height="303"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                </imageView>
-                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email-id*" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sYC-ut-hid">
-                    <rect key="frame" x="82" y="84" width="154" height="30"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                    <textInputTraits key="textInputTraits"/>
-                </textField>
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
             <simulatedStatusBarMetrics key="simulatedStatusBarMetrics"/>
             <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
         </view>
     </objects>
-    <resources>
-        <image name="On_the_Air.jpg" width="338" height="400"/>
-    </resources>
 </document>

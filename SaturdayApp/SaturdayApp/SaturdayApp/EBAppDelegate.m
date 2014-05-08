@@ -12,8 +12,6 @@
 #import "EBSelfieViewController.h"
 //adding Parse
 #import <Parse/Parse.h>
-#import "EBNameViewController.h"
-#import "EBMainListViewController.h"
 
 @implementation EBAppDelegate
 
