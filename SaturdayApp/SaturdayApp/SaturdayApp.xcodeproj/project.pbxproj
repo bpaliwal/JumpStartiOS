@@ -21,8 +21,6 @@
 		4FAB3B8719032EE200211885 /* SaturdayAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 4FAB3B8619032EE200211885 /* SaturdayAppTests.m */; };
 		7340C285190333C7002D4EC2 /* EBSelfieViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C283190333C7002D4EC2 /* EBSelfieViewController.m */; };
 		7340C286190333C7002D4EC2 /* EBSelfieViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C284190333C7002D4EC2 /* EBSelfieViewController.xib */; };
-		7340C28A190333DA002D4EC2 /* EBNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C288190333DA002D4EC2 /* EBNameViewController.m */; };
-		7340C28B190333DA002D4EC2 /* EBNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C289190333DA002D4EC2 /* EBNameViewController.xib */; };
 		7340C28F19033403002D4EC2 /* EBMainListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C28D19033403002D4EC2 /* EBMainListViewController.m */; };
 		7340C29019033403002D4EC2 /* EBMainListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7340C28E19033403002D4EC2 /* EBMainListViewController.xib */; };
 		7340C29419033417002D4EC2 /* EBCreateBroadcastViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7340C29219033417002D4EC2 /* EBCreateBroadcastViewController.m */; };
@@ -39,6 +37,9 @@
 		73DC3B2619157FB400B0DC5C /* selfie6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 73DC3B2019157FB400B0DC5C /* selfie6.jpg */; };
 		73DC3B29191583AE00B0DC5C /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73DC3B28191583AE00B0DC5C /* QuartzCore.framework */; };
 		99BC02A9DD334E23A85AA06F /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5C1A9950621546A2A346186B /* libPods.a */; };
+		AD64C4B71917580E00E80829 /* On_the_Air.jpg in Resources */ = {isa = PBXBuildFile; fileRef = AD64C4B61917580E00E80829 /* On_the_Air.jpg */; };
+		ADD1E6AF1917688E009BA4F3 /* EBNameViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD1E6AD1917688E009BA4F3 /* EBNameViewController.m */; };
+		ADD1E6B01917688E009BA4F3 /* EBNameViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD1E6AE1917688E009BA4F3 /* EBNameViewController.xib */; };
 		ADD577CF190332E20090AE33 /* EBLocationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ADD577CD190332E20090AE33 /* EBLocationViewController.m */; };
 		ADD577D0190332E20090AE33 /* EBLocationViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = ADD577CE190332E20090AE33 /* EBLocationViewController.xib */; };
 /* End PBXBuildFile section */
@@ -75,9 +76,6 @@
 		7340C282190333C7002D4EC2 /* EBSelfieViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBSelfieViewController.h; sourceTree = "<group>"; };
 		7340C283190333C7002D4EC2 /* EBSelfieViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBSelfieViewController.m; sourceTree = "<group>"; };
 		7340C284190333C7002D4EC2 /* EBSelfieViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBSelfieViewController.xib; sourceTree = "<group>"; };
-		7340C287190333DA002D4EC2 /* EBNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNameViewController.h; sourceTree = "<group>"; };
-		7340C288190333DA002D4EC2 /* EBNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNameViewController.m; sourceTree = "<group>"; };
-		7340C289190333DA002D4EC2 /* EBNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBNameViewController.xib; sourceTree = "<group>"; };
 		7340C28C19033403002D4EC2 /* EBMainListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBMainListViewController.h; sourceTree = "<group>"; };
 		7340C28D19033403002D4EC2 /* EBMainListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBMainListViewController.m; sourceTree = "<group>"; };
 		7340C28E19033403002D4EC2 /* EBMainListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBMainListViewController.xib; sourceTree = "<group>"; };
@@ -96,6 +94,10 @@
 		73DC3B1F19157FB400B0DC5C /* selfie5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie5.jpg; sourceTree = "<group>"; };
 		73DC3B2019157FB400B0DC5C /* selfie6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = selfie6.jpg; sourceTree = "<group>"; };
 		73DC3B28191583AE00B0DC5C /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		AD64C4B61917580E00E80829 /* On_the_Air.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = On_the_Air.jpg; sourceTree = "<group>"; };
+		ADD1E6AC1917688E009BA4F3 /* EBNameViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBNameViewController.h; sourceTree = "<group>"; };
+		ADD1E6AD1917688E009BA4F3 /* EBNameViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBNameViewController.m; sourceTree = "<group>"; };
+		ADD1E6AE1917688E009BA4F3 /* EBNameViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBNameViewController.xib; sourceTree = "<group>"; };
 		ADD577CC190332E20090AE33 /* EBLocationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EBLocationViewController.h; sourceTree = "<group>"; };
 		ADD577CD190332E20090AE33 /* EBLocationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EBLocationViewController.m; sourceTree = "<group>"; };
 		ADD577CE190332E20090AE33 /* EBLocationViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EBLocationViewController.xib; sourceTree = "<group>"; };
@@ -171,6 +173,7 @@
 				4FAB3B7019032EE100211885 /* EBAppDelegate.h */,
 				4FAB3B7119032EE100211885 /* EBAppDelegate.m */,
 				4FAB3B7319032EE100211885 /* Images.xcassets */,
+				AD64C4B61917580E00E80829 /* On_the_Air.jpg */,
 				4FAB3B6819032EE100211885 /* Supporting Files */,
 				ADD577CC190332E20090AE33 /* EBLocationViewController.h */,
 				ADD577CD190332E20090AE33 /* EBLocationViewController.m */,
@@ -178,9 +181,6 @@
 				7340C282190333C7002D4EC2 /* EBSelfieViewController.h */,
 				7340C283190333C7002D4EC2 /* EBSelfieViewController.m */,
 				7340C284190333C7002D4EC2 /* EBSelfieViewController.xib */,
-				7340C287190333DA002D4EC2 /* EBNameViewController.h */,
-				7340C288190333DA002D4EC2 /* EBNameViewController.m */,
-				7340C289190333DA002D4EC2 /* EBNameViewController.xib */,
 				7340C28C19033403002D4EC2 /* EBMainListViewController.h */,
 				7340C28D19033403002D4EC2 /* EBMainListViewController.m */,
 				7340C28E19033403002D4EC2 /* EBMainListViewController.xib */,
@@ -190,6 +190,9 @@
 				7340C2961903342A002D4EC2 /* EBBroadcastViewController.h */,
 				7340C2971903342A002D4EC2 /* EBBroadcastViewController.m */,
 				7340C2981903342A002D4EC2 /* EBBroadcastViewController.xib */,
+				ADD1E6AC1917688E009BA4F3 /* EBNameViewController.h */,
+				ADD1E6AD1917688E009BA4F3 /* EBNameViewController.m */,
+				ADD1E6AE1917688E009BA4F3 /* EBNameViewController.xib */,
 			);
 			path = SaturdayApp;
 			sourceTree = "<group>";
@@ -315,12 +318,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4FAB3B6C19032EE100211885 /* InfoPlist.strings in Resources */,
-				7340C28B190333DA002D4EC2 /* EBNameViewController.xib in Resources */,
 				73DC3B2219157FB400B0DC5C /* selfie2.jpg in Resources */,
 				7340C286190333C7002D4EC2 /* EBSelfieViewController.xib in Resources */,
 				7340C29519033417002D4EC2 /* EBCreateBroadcastViewController.xib in Resources */,
 				73DC3B2519157FB400B0DC5C /* selfie5.jpg in Resources */,
 				4FAB3B7419032EE100211885 /* Images.xcassets in Resources */,
+				ADD1E6B01917688E009BA4F3 /* EBNameViewController.xib in Resources */,
+				AD64C4B71917580E00E80829 /* On_the_Air.jpg in Resources */,
 				7340C29019033403002D4EC2 /* EBMainListViewController.xib in Resources */,
 				73DC3B2619157FB400B0DC5C /* selfie6.jpg in Resources */,
 				ADD577D0190332E20090AE33 /* EBLocationViewController.xib in Resources */,
@@ -379,7 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7340C28A190333DA002D4EC2 /* EBNameViewController.m in Sources */,
+				ADD1E6AF1917688E009BA4F3 /* EBNameViewController.m in Sources */,
 				4FAB3B6E19032EE100211885 /* main.m in Sources */,
 				7340C29419033417002D4EC2 /* EBCreateBroadcastViewController.m in Sources */,
 				7340C28F19033403002D4EC2 /* EBMainListViewController.m in Sources */,

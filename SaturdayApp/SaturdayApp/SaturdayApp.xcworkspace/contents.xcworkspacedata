@@ -1,1 +1,19 @@
-<?xml version='1.0' encoding='UTF-8'?><Workspace version='1.0'><FileRef location='group:SaturdayApp.xcodeproj'/><FileRef location='group:Pods/Pods.xcodeproj'/></Workspace>
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:EBNameViewController.h">
+   </FileRef>
+   <FileRef
+      location = "group:EBNameViewController.m">
+   </FileRef>
+   <FileRef
+      location = "group:EBNameViewController.xib">
+   </FileRef>
+   <FileRef
+      location = "group:SaturdayApp.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:Pods/Pods.xcodeproj">
+   </FileRef>
+</Workspace>
