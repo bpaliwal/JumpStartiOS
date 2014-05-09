@@ -8,6 +8,7 @@
 
 #import "EBSelfieViewController.h"
 #import "EBNameViewController.h"
+#import "EBCreateBroadcastViewController.h"
 #import <QuartzCore/QuartzCore.h>
 #import <MobileCoreServices/MobileCoreServices.h>
 
@@ -72,8 +73,13 @@
 
 - (IBAction)didSkipPicture:(id)sender {
     NSLog(@"Skipping Selfie");
-    EBNameViewController *nameViewController = [[EBNameViewController alloc] init];
+    // to be uncommented later
+     EBNameViewController *nameViewController = [[EBNameViewController alloc] init];
     [self.navigationController pushViewController:nameViewController animated:YES];
+    
+    /*EBCreateBroadcastViewController *createBroadcastViewController = [[EBCreateBroadcastViewController alloc] init];
+    [self.navigationController pushViewController:createBroadcastViewController animated:YES];*/
+    
 
     [_selfieChangeImageTimer invalidate];
 }

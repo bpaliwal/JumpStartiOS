@@ -7,6 +7,8 @@
 //
 
 #import "EBCreateBroadcastViewController.h"
+#import <QuartzCore/QuartzCore.h>
+#import <Parse/Parse.h>
 
 @interface EBCreateBroadcastViewController ()
 @property (weak, nonatomic) IBOutlet UITextView *createBroadcastText;
@@ -31,6 +33,10 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    self.createBroadcastText.layer.borderWidth = .5f;
+    self.createBroadcastText.layer.borderColor = [[UIColor lightGrayColor] CGColor];
+    self.createBroadcastText.layer.cornerRadius = 5;
+
 }
 
 - (void)didReceiveMemoryWarning
